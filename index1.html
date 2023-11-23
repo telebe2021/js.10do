@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      form{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      label{
+        height: 40px;
+        width: 120px;
+      }
+      button{
+        border-radius: 12px;
+        height: 30px;
+        width: 100px;
+      }
+      .menu{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+    </style>
+</head>
+<body>
+    
+    <form>
+      <label>
+        <input type="radio" name="ageGroup" value="Yaslilar"> Yaslilar
+      </label>
+      <label>
+        <input type="radio" name="ageGroup" value="Orta Yaslilar"> Orta Yaslilar
+      </label>
+      <label>
+        <input type="radio" name="ageGroup" value="Usaqlar"> Usaqlar
+      </label>
+      <button type="button" onclick="showSelectedValue()">Add</button>
+    </form>
+
+                <!-- ====================== -->
+
+    <div class="menu"><input type="text" id="textInput" disabled>
+    <button id="openButton" onclick="enableInput()">Open</button>
+    <button id="closeButton" onclick="disableInput()" disabled>Close</button>
+    </div>
+    <script src="./script1.js"></script>
+</body>
+</html>
